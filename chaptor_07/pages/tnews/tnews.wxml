@@ -1,0 +1,8 @@
+<!--pages/tnews/tnews.wxml-->
+<text>pages/tnews/tnews.wxml</text>
+<view >
+  <block wx:for="{{tnews}}" >
+  {{item.heannews}}
+  </block>
+
+</view>

@@ -1,0 +1,21 @@
+<!--pages/xinxi/xinxi.wxml-->
+<block  for="{{personalinfo}}">
+<form bindsubmit="formSubmit" bindreset="formReset">
+   <view>
+   姓名： <input  class="weui-input"   auto-focus placehoder="{{item.name}}"/>
+   </view>
+ <view>
+  专业 <input   class="weui-input"  auto-focus placehoder="{{item.objee}}"/>
+   </view>
+   <view>
+性别<input   class="weui-input"  auto-focus placehoder="{{item.getter}}"/>
+   </view>
+   <view>
+学号<input  class="weui-input"   auto-focus placehoder="{{item.name}}"/>
+   </view>
+    <view>
+学院<input  class="weui-input"   auto-focus placehoder="{{item.collage}}"/>
+   </view>
+   <button>确定</button>
+</form>
+</block> 

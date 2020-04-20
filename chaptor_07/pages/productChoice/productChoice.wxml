@@ -1,0 +1,19 @@
+<view class="content">
+  <view class="product">
+    <view class='ulli {{support}}' bindtap="productChoose" id="support" data-text='业务办理'>
+      <image src='../../image/support.png'></image>
+      <text>业务办理</text>
+    </view>
+    <view class='ulli {{refer}}' bindtap="productChoose" id="refer" data-text='业务咨询'>
+      <image src='../../image/refer.png'></image>
+      <text>业务咨询</text>
+    </view>
+    <view class='ulli {{complain}}' bindtap="productChoose" id="complain" data-text='投诉与建议'>
+      <image src='../../image/complain.png'></image>
+      <text>投诉与建议</text>
+    </view>
+  </view>
+  <view class="risk_title">
+    <button class="btn-back" bindtap="productChioce" loading='{{loading}}'>确定</button>
+  </view>
+</view>

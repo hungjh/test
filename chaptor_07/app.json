@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/geren/geren",
+    "pages/article/list",
+    "pages/znewsjdbc/znewsjdbc",
+    "pages/newstuwk/newstuwk",
+    "pages/jianjie/jianjie",
+    "pages/object/object",
+    "pages/scenery/scenery",
+    "pages/headnews/headnews",
+    "pages/sunpeo/sunpeo",
+    "pages/trific/trific",
+    "pages/zhangcheng/zhangcheng",
+    "pages/xuanchuan/xuanchuan",
+    "pages/pvedio/pvedio",
+    "pages/xinxi/xinxi",
+    "pages/tnews/tnews",
+    "pages/timenews/timenews"
+  ],
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/geren/geren",
+        "text": "个人中心"
+      }
+      ]
+    },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "掌上阳光",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

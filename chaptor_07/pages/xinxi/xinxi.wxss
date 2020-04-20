@@ -1,0 +1,6 @@
+/* pages/xinxi/xinxi.wxss */
+.weui-input{
+   border: 1px;
+   height: auto;
+   border-color: aquamarine;
+}

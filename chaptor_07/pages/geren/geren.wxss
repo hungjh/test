@@ -1,0 +1,9 @@
+.touxiang{
+  width: 128rpx;
+  height: 128rpx; 
+  text-align: center;
+  margin: 0 auto
+  }
+  .xinxi{
+    border-block-start: solid
+  }

@@ -1,0 +1,8 @@
+<!--pages/timenews/timenews.wxml-->
+<text>pages/timenews/timenews.wxml</text>
+<view >
+  <block wx:for="{{timenews}}" >
+  {{item.timenews}}
+  </block>
+
+</view>

@@ -1,0 +1,12 @@
+<!--校园风光-->
+<view>
+   <view>
+   校园风光
+   </view>
+   <image src="/images/fengguang1.jpg"></image>
+    <image src="/images/fengguang2.jpg"></image>
+     <image src="/images/fengguang3.jpg"></image>
+      <image src="/images/fengguang4.jpg"></image>
+       <image src="/images/fengguang5.jpg"></image>
+       
+</view>

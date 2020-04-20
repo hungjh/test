@@ -1,0 +1,23 @@
+{
+  "name": "miniprogram-api-promose",
+  "version": "1.0.2",
+  "description": "zjdbc",
+  "main": "zjdbc",
+  "scripts": {
+    "test": "newjabc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hungjh?tab=repositories"
+  },
+  "keywords": [
+    "gjh876659976"
+  ],
+  "author": "hungjh",
+  "license": "ISC",
+  "dependencies": {
+    "miniprogram-api-promise": "^1.0.4",
+    "wx-server-sdk": "^1.8.3"
+  },
+  "devDependencies": {}
+}

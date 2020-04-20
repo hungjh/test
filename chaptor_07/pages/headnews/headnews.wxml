@@ -1,0 +1,18 @@
+<!--新闻头条-->
+<view>
+  <view>
+    <navigator url="../../pages/znewsjdbc/znewsjdbc">
+    综合新闻
+    </navigator>
+  </view>
+  <view>
+    <navigator url="../../pages/timenews/timenews">
+    事实新闻
+    </navigator>
+  </view>
+  <view>
+    <navigator url="../../pages/tnews/tnews">
+    头条新闻
+    </navigator>
+  </view>
+</view>

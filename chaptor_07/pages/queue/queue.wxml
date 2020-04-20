@@ -1,0 +1,77 @@
+
+<view wx:if="{{initActive == 'active'}}" class="process-init">
+  <image src='../../image/readyface1.gif'></image>
+  <view class='loadingText'>
+    正在连接客服，请稍候
+    <view class="loadingSpan">
+      <view class="typing_loader"></view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{queueActive == 'active'}}" class="process-queue">
+  <view class="wait-content">
+    <view class="clock">
+      <image src='../../image/wiatclockbg.png'></image>
+      <text>{{WaitingDuration}}</text>
+    </view>
+    <text class="text">
+		您的业务(<text>{{productContent}}</text>)正在受理中
+    当前队列(<text>{{queueId}}</text>)人数：<text class="queue-user-no">{{queueRealtimeNo}}</text>人 您排在第<text class="queue-user-no">{{queueRealtimeRange}}</text>位
+    </text>
+  </view>
+  <button class="cancel-queue-button" bindtap='cancelQueue'>{{queueText}}</button>
+</view>
+<view wx:if="{{videoCall == 'active'}}" class="process-init">
+  <image src='../../image/readyface1.gif'></image>
+  <view class='loadingText'>{{loadingText}}
+    <view class="loadingSpan">
+      <view class="typing_loader"></view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{videoActive == 'active'}}" id="Video" class="process-video">
+		<!--客户视频画面-->
+		<view class="Client-Area">
+			<image src="../../image/camera.png"></image>
+      <!--推流  -->
+      <live-pusher id="{{anychat_local_id}}" 
+                mode="RTC"
+                autopush
+                audio-quality="high"
+                min-bitrate="200"
+                max-bitrate="300"
+      url="{{pusher_rtmpurl}}">
+      <cover-view class='layer-box {{layerActiveCamera}}'>
+          <cover-view>{{layerTextCamera}}</cover-view>
+      </cover-view>
+      </live-pusher>
+		</view>
+    <!--座席视频画面-->
+		<view class="Agent-Area">
+			  <image src="../../image/camera.png"></image>
+        <!--拉流  -->
+        <!-- debug="true" -->
+        <live-player 
+                id="{{anychat_remote_id}}" 
+                mode="RTC"
+                autoplay
+                object-fit="fillCrop"
+                min-cache="1"
+                max-cache="3" 
+                src="{{puller_rtmpurl}}" 
+                object-fit="fillCrop">
+        </live-player>
+		</view> 
+    <view id="opacity-bg" class="TransBufferComponent"></view>
+    <view id="Question-Content" class="TransBufferComponent">
+      <!-- <text>{{puller_rtmpurl}}</text> -->
+    </view>
+</view>
+<cover-view class='layer-box {{layerActive}}'>
+  <cover-view>{{layerText}}</cover-view>
+</cover-view>
+<modal hidden="{{hidden}}" title="" confirm-text="确定" bindconfirm="confirm" no-cancel="{{nocancel}}">
+   {{modelText}}
+</modal>
+
+

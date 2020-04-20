@@ -1,0 +1,9 @@
+
+<view class="content">
+  <image src="../../image/thanks.png" class="thanks"></image>
+  <text class="thankText">感谢您对我们的支持</text>
+  <text class="thankText">我们会更加努力做到更好</text>
+  <view class="thankText contant_top">
+    <button class="btn-back" bindtap='backLogin'>返回登录</button>
+  </view>          
+</view>

@@ -1,0 +1,9 @@
+<!--综合新闻jdbc-->
+<view>
+  <view >
+  <block wx:for="{{znews}}" >
+  {{item.zonginfo}}
+  </block>
+
+</view>
+</view>
